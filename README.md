@@ -1,6 +1,6 @@
 Java CucmberAutomation tests
  
- [![Build Status](https://travis-ci.com/iljapavlovs/cucumber-jvm-parallel-template.svg?branch=master)](https://travis-ci.com/iljapavlovs/cucumber-jvm-parallel-template)
+ [![Build Status](https://travis-ci.com/parasgor/HotelbookingAutoTests.svg?branch=master)](https://github.com/parasgor/HotelbookingAutoTests)
 =======================
 
 Test the hotel booking application 
