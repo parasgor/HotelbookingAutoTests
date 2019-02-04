@@ -33,7 +33,7 @@ public class ApplicationProperties {
                     setProperty(ApplicationProperty.APP_URL.name, "http://hotel-test.equalexperts.io/");
 
                     //Selenium grid settings
-                    setProperty(ApplicationProperty.REMOTE_DRIVER.name, "true");
+                    setProperty(ApplicationProperty.REMOTE_DRIVER.name, "false");
                     setProperty(ApplicationProperty.SELENIUM_GRID_URL.name, "http://localhost:4444/wd/hub");
 
                     setProperty(ApplicationProperty.DESIRED_BROWSER_VERSION.name, "");

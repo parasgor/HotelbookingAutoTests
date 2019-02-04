@@ -8,8 +8,8 @@ addons:
   firefox: latest
 
 # needed in order to use docker
-services:
-- docker
+#services:
+#- docker
 before_install:
 - chmod +x mvnw
 - # start your web application and listen on `localhost`
@@ -18,8 +18,8 @@ before_install:
 
 #- docker pull selenoid/vnc:chrome_68.0
 #- docker-compose -f docker/docker-compose-selenoid.yml up
-- docker-compose -f docker/seleniumgrid/docker-compose-selenium.yml up
-- docker ps -a
+#- docker-compose -f docker/seleniumgrid/docker-compose-selenium.yml up
+#- docker ps -a
 
 install: true
 
