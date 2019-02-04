@@ -19,6 +19,7 @@ before_install:
 #- docker pull selenoid/vnc:chrome_68.0
 #- docker-compose -f docker/docker-compose-selenoid.yml up
 - docker-compose -f docker/seleniumgrid/docker-compose-selenium.yml up
+- docker ps -a
 
 install: true
 
