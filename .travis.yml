@@ -35,5 +35,5 @@ jobs:
   - stage: build
     script: ./mvnw clean compile
   - stage: test
-    script: ./mvnw verify -P nogrid -Dthreads=3 -Dbrowser=firefox -Dheadless=true
+    script: ./mvnw verify -P nogrid -Dthreads=3 -Dbrowser=Chrome -Dheadless=true
 
