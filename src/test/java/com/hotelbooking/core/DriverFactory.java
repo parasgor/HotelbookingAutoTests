@@ -44,6 +44,7 @@ public class DriverFactory {
   public DriverFactory() {
     DriverType driverType = FIREFOX;
     String browser = ApplicationProperties.getString(BROWSER);
+    log.info("selected browser is -"+ browser);
     try {
       driverType = DriverType.valueOf(browser.toUpperCase());
     } catch (IllegalArgumentException ignored) {

@@ -12,7 +12,7 @@ public class StepsModel {
 
     public StepsModel(TestDataContext resourceManager) throws Exception {
         this.resourceManager = resourceManager;
-        this.scenario = resourceManager.testInfo.getCurrentScenario();
+       // this.scenario = resourceManager.testInfo.getCurrentScenario();
 
     }
 

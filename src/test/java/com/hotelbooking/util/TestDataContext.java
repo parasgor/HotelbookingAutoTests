@@ -2,7 +2,6 @@ package com.hotelbooking.util;
 
 import lombok.Getter;
 import lombok.Setter;
-import com.hotelbooking.config.TestInfo;
 
 import java.util.HashMap;
 import java.util.Map;

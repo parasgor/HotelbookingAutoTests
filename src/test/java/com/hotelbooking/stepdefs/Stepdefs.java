@@ -91,16 +91,34 @@ public class Stepdefs extends  StepsModel
         String expectedCheckOutDate = resourceManager.getTestData("checkoutDate").toString();
         String expectedDepositStatus = resourceManager.getTestData("depositStatus").toString();
 
-            boolean isEntryInGrid =  isEntryAvailInGrid(
+        boolean isEntryInGrid = false;
+        int retryCount = 3;
+        for( int counter =1; counter<=retryCount; counter++){
+            isEntryInGrid = isEntryAvailInGrid(
                     expectedFirstName,expectedSurName,expectedTotalPrice, expectedDepositStatus,
                     expectedCheckInDate, expectedCheckOutDate);
 
-            if(!isEntryInGrid) {
-                    Assert.fail("Newly created entry is not available in list");
-                }else {
-                    System.out.println("Trying for one more time to find on the page");
-                }
+            if( isEntryInGrid == false){
+                continue;
+            }else {
+                break;
+            }
 
+        }
+
+
+            if(!isEntryInGrid) {
+
+                System.out.println("expected entry having below information");
+                System.out.println("expectedFirstName -" + expectedFirstName);
+                System.out.println("expectedSurName -" + expectedSurName);
+                System.out.println("expectedTotalPrice -" + expectedTotalPrice);
+                System.out.println("expectedCheckInDate -" + expectedCheckInDate);
+                System.out.println("expectedCheckOutDate -" + expectedCheckOutDate);
+                System.out.println("expectedDepositStatus -" + expectedDepositStatus);
+
+                Assert.fail("Newly created entry is not available in list");
+                }
     }
 
 

@@ -37,8 +37,6 @@ public class Hooks  extends StepsModel {
         String sessionId = ((RemoteWebDriver) DriverBase.getDriver()).getSessionId().toString();
         log.info("Starting Scenario: \"" + scenario.getName() + "\" with Session ID: " + sessionId);
         DriverBase.getDriver().manage().deleteAllCookies();
-       // DriverBase.getDriver().manage().window().maximize();
-        resourceManager.testInfo.setCurrentScenario(scenario);
 
     }
 

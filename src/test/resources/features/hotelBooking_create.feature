@@ -1,7 +1,7 @@
 
 @Regression
 @Create
-Feature: Create & Delete Hotel booking
+Feature: Create Hotel booking
 
   Scenario Outline: Create booking
     Given I navigate to Home page
@@ -22,8 +22,7 @@ Feature: Create & Delete Hotel booking
       |           |         | 10         | 2019-01-01  | 2019-02-02   | false         |
 
 
-
-  @delete
+@delete
   Scenario: Delete Booking
     Given I navigate to Home page
     When I click on the delete button for the very first entry

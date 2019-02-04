@@ -56,7 +56,7 @@ public class ApplicationProperties {
             put("test", new Properties() { //DEV environment for running CI tests
                 {
                     setProperty(ApplicationProperty.APP_URL.name, "http://hotel-test.equalexperts.io/");
-                    setProperty(ApplicationProperty.REMOTE_DRIVER.name, "true");
+                    setProperty(ApplicationProperty.REMOTE_DRIVER.name, "false");
                 }
             });
         }
