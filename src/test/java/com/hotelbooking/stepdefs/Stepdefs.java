@@ -99,6 +99,7 @@ public class Stepdefs extends  StepsModel
                     expectedCheckInDate, expectedCheckOutDate);
 
             if( isEntryInGrid == false){
+                System.out.println("Trying one more time to find the entry..");
                 continue;
             }else {
                 break;
@@ -107,7 +108,7 @@ public class Stepdefs extends  StepsModel
         }
 
 
-            if(!isEntryInGrid) {
+            if(isEntryInGrid== false) {
 
                 System.out.println("expected entry having below information");
                 System.out.println("expectedFirstName -" + expectedFirstName);

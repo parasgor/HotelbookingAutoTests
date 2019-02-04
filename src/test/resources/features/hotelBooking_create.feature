@@ -16,18 +16,10 @@ Feature: Create Hotel booking
 
     Examples:
       | firstname | surname | totalPrice | checkinDate | checkoutDate | paidOrNotPaid |
-
       #this entries will be user supplied data
-#      | Oscar     | Green   | 10         | 2019-01-02  | 2019-02-03   | true          |
-#      | John      | Oliver  | 10         | 2019-01-01  | 2019-02-02   | false         |
-#      | Tusok     | Nouin   | 10         | 2019-01-01  | 2019-02-02   | false         |
-
+      | Oscar     | Green   | 10         | 2019-01-02  | 2019-02-03   | false         |
+      | John      | Oliver  | 10         | 2019-01-01  | 2019-02-02   | false         |
+      | Tusok     | Nouin   | 10         | 2019-01-01  | 2019-02-02   | false         |
       #blank entries in firstname and surname  will pick up the random alphabets to make the entry unique everytime
       |           |         | 10         | 2019-01-01  | 2019-02-02   | false         |
 
-
-@delete
-  Scenario: Delete Booking
-    Given I navigate to Home page
-    When I click on the delete button for the very first entry
-    Then that entry should be removed from the list
