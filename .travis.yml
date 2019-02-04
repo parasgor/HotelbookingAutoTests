@@ -27,13 +27,13 @@ install: true
 stages:
 - name: build
 
-- name: test
+#- name: test
 
 
 jobs:
   include:
   - stage: build
     script: ./mvnw clean compile
-  - stage: test
-    script: ./mvnw verify -P nogrid -Dthreads=3 -Dbrowser=Chrome -Dheadless=true
+#  - stage: test
+#    script: ./mvnw verify -P nogrid -Dthreads=3 -Dbrowser=Chrome -Dheadless=true
 
